@@ -29,7 +29,18 @@ app.get('/', (req, res) => {
 });
 
 app.get('/items/:id', (req, res) => {
-
+  var id = req.params.id;
+  Item.findById(id).then((item) => {
+    if(!item) {
+      return res.status(400).send();
+    }
+    // res.send({item: item});
+    res.render('item.hbs', {
+      item
+    });
+  }).catch((e) => {
+    res.status(400).send();
+  })
 });
 
 app.post('/items', (req, res) => {
