@@ -39,3 +39,16 @@ $("#saveNewItem").off().click(() => {
     console.log("There was an error " + err);
   });
 });
+
+// Delete axios calls
+
+$(".delete-icon").off().click(() => {
+  alert('clicked');
+})
+
+
+// Edit axios calls
+
+$(".edit-icon").off().click(() => {
+  alert('edit me');
+})
