@@ -1,0 +1,25 @@
+body {
+  margin: 10px;
+  background-color: #c1c1c1;
+}
+
+.main {
+  background-color: white;
+  padding: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+}
+
+.remove_button_css {
+  outline: none;
+  padding: 5px;
+  border: 0px;
+  box-sizing: none;
+  background-color: transparent;
+}
+
+/* .modal-dialog {
+  width: 1000px;
+} */
